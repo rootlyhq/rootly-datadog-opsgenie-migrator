@@ -17,11 +17,11 @@ jobs:
 
       - uses: jdx/mise-action@dad1bfd3df957f44999b559dd69dc1671cb4e9ea # v4.2.1
 
-      - run: corepack enable && corepack install
+      - run: corepack enable
 
-      - run: yarn install --immutable
+      - run: corepack yarn install --immutable
 
-      - run: yarn lint
+      - run: corepack yarn lint
 
   test:
     runs-on: ubuntu-latest
@@ -30,8 +30,8 @@ jobs:
 
       - uses: jdx/mise-action@dad1bfd3df957f44999b559dd69dc1671cb4e9ea # v4.2.1
 
-      - run: corepack enable && corepack install
+      - run: corepack enable
 
-      - run: yarn install --immutable
+      - run: corepack yarn install --immutable
 
-      - run: yarn test
+      - run: corepack yarn test
