@@ -1,5 +1,8 @@
 # Rootly Datadog Opsgenie Migrator
 
+> [!WARNING]
+> **This repository is archived and no longer maintained.** It has been replaced by [rootly-datadog-notification-migrator](https://github.com/rootlyhq/rootly-datadog-notification-migrator), which migrates Datadog monitor notifications from both PagerDuty and Opsgenie to Rootly webhooks.
+
 Appends `@webhook-rootly-[serviceName]` to every Datadog monitor containing `@opsgenie-[serviceName]`, creating webhooks as necessary. Services are matched by name.
 
 ## Requirements
